@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 
 import { SESSIONS } from '../dummy-sessions.ts';
 
-export default function SessionPage() {
+const SessionPage = () => {
   const params = useParams<{ id: string }>();
 
   const sessionId = params.id;
@@ -44,3 +44,5 @@ export default function SessionPage() {
     </main>
   );
 }
+
+export default SessionPage;
